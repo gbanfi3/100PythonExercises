@@ -6,7 +6,7 @@ for i in d:
         c[i] = d[i]
 print(c)
 
-print({k,v for k,v in d if v <= 1})
+print({k:v for (k,v) in d.items() if v <= 1})
 
 dd = dict(d)
 for i in d:
