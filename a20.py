@@ -18,3 +18,4 @@ for i in d.values():
 print(b)
 
 c= sum(d.values())
+print(c)
