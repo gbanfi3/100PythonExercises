@@ -6,7 +6,9 @@ for i in a:
         b.append(i)
 print(b)
 
-c = set(a)
+c = list(set(a))
 print(c)
+
+
 
 
