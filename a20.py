@@ -16,3 +16,5 @@ b = 0
 for i in d.values():
     b += i
 print(b)
+
+c= sum(d.values())
