@@ -3,3 +3,5 @@ sum = 0
 for i in d:
     sum += d[i]
 print(sum)
+
+print(d["a"]+d["b"])
