@@ -20,10 +20,11 @@ def countwords(s:string):
 # s = "aa"
 # s = "a1a"
 # s = "1a1"
-s = "a1a2a3a4a5"
+s = "a1. a2a3a4a5"
 print(countwords(s))
 
-
+s2 = s.split(sep="13")
+print(s2)
 
 # print(string.whitespace)
 # print(string.ascii_lowercase)
