@@ -6,3 +6,4 @@ def countwords(f:str):
     return len(tart2.split())
 
 print(countwords("a37.txt"))
+print(countwords("words2.txt"))
