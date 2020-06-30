@@ -11,8 +11,10 @@ import string
 
 a = string.ascii_lowercase[::2]
 b = string.ascii_lowercase[1::2]
+print(a)
+print(b)
 with open("a43.txt","w") as file:
     for i,j in zip(a,b):
-        file.write(i + b + "\n")
+        file.write(i + j + "\n")
 
 
