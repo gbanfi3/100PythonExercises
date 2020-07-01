@@ -1,13 +1,16 @@
 import sys, os, pprint
+
+def mylen(a):
+    return len(a)
+
 dirr = "letters3"
 if not os.path.exists(dirr):
     sys.exit(1)
 files = os.listdir(dirr)
-# pprint.pprint(files)
+files.sort()
+
 c = []
 for f in files:
-    # f2 = "\\" + dirr + "\\" + f
-    # x = r"alma\\" + dirr
     with open(dirr + "/" + f, 'r') as ff:
         a = ff.read()
         c.append(a)
