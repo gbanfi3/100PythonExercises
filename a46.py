@@ -1,5 +1,12 @@
-import os, pprint
+import sys, os, pprint
 dirr = "letters3"
-if os.path.exists(dirr):
-    files = os.listdir(dirr)
-    pprint.pprint(files)
+if not os.path.exists(dirr):
+    sys.exit(1)
+files = os.listdir(dirr)
+# pprint.pprint(files)
+c = []
+for f in files:
+    with open(dirr + '\\' + f, 'r') as ff:
+        a = ff.read()
+        c.append(a)
+pprint.pprint(c)
