@@ -12,7 +12,7 @@ dirr = "./letters3/"
 if not os.path.exists(dirr):
     os.mkdir(dirr)
 for c in string.ascii_letters:
-    with open(c + ".txt") as f:
+    with open(dirr + c + ".txt") as f:
         f.write(c)
 
 
