@@ -6,8 +6,13 @@
 #     f.write(i)
 #     f.close()
 
-import os
+import os, string
 
 dirr = "./letters3/"
 if not os.path.exists(dirr):
     os.mkdir(dirr)
+for c in string.ascii_letters:
+    with open(c + ".txt") as f:
+        f.write(c)
+
+
