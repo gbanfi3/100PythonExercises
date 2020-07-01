@@ -6,7 +6,9 @@ files = os.listdir(dirr)
 # pprint.pprint(files)
 c = []
 for f in files:
-    with open(dirr + '\\' + f, 'r') as ff:
+    # f2 = "\\" + dirr + "\\" + f
+    # x = r"alma\\" + dirr
+    with open(dirr + "/" + f, 'r') as ff:
         a = ff.read()
         c.append(a)
 pprint.pprint(c)
