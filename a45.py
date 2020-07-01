@@ -11,8 +11,8 @@ import os, string
 dirr = "./letters3/"
 if not os.path.exists(dirr):
     os.mkdir(dirr)
-for c in string.ascii_letters:
-    with open(dirr + c + ".txt") as f:
+for c in string.ascii_lowercase:
+    with open(dirr + c + ".txt", "w") as f:
         f.write(c)
 
 
